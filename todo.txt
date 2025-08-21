@@ -1,0 +1,21 @@
+    __     _      _____         _ _         _   _         
+ __|  |___| |_   |  _  |___ ___| |_|___ ___| |_|_|___ ___ 
+|  |  | . | . |  |     | . | . | | |  _| .'|  _| | . |   |
+|_____|___|___|  |__|__|  _|  _|_|_|___|__,|_| |_|___|_|_|
+                       |_| |_|                            
+                                                          
+ _____             _                                      
+|_   _|___ ___ ___| |_ ___ ___                            
+  | | |  _| .'|  _| '_| -_|  _|                           
+  |_| |_| |__,|___|_,_|___|_|                             
+
+TO DO:
+ - find a library/method that handles user input in the terminal [PRIORITY]
+ - CSV operations like add, view, edit
+ - menus for each operation
+
+
+ USING A CSV FILE:
+  - each row is represented by each line
+  - each column has a delimiter that breaks the row down into respective columns
+  - for our purposes, well add a header for added excel compatibility
