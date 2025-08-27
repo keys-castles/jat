@@ -10,8 +10,9 @@
 FILE *file;
 char buffer[256];
 
-// dont really know if you need a strcut for the damn job?
-// why not simply go into the csv file whenever you want to read/write? why is a struct necessary for this?
+// WE NEED THIS STRUCT, holds the jobs in memory while they are printed out
+// in the future: dynamically allocate space for the set amount of job structs we are going to
+// use
 
 // typedef struct job {
 //     char jobTitle[20];
