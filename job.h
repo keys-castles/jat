@@ -3,12 +3,14 @@
 // depending on what the user wants to do
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #ifndef JOB_H
 #define JOB_H
 
 FILE *file;
 char buffer[256];
+char* strip;
 
 // WE NEED THIS STRUCT, holds the jobs in memory while they are printed out
 // in the future: dynamically allocate space for the set amount of job structs we are going to
@@ -42,8 +44,16 @@ void viewApplications(){
     }
 
     // we need to parse the rows, otherwise it will have commas and not be padded
+    // parse using strtok?
     while (fgets(buffer, 250, file)){
-        printf("%s", buffer);
+
+        strip = strtok(buffer, ",");
+
+        while (strip != NULL){
+            printf("%s     ", strip);
+            strip = strtok(NULL, ",");
+        }
+
     }
 
     printf("\n");
