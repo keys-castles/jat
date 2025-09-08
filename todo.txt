@@ -12,7 +12,7 @@
 TO DO:
  - find a library/method that handles user input in the terminal [PRIORITY]
  - CSV operations like add, view, edit
- - menus for each operation
+ - increase menu functionality [maybe through a switch case?]
 
 
  USING A CSV FILE:

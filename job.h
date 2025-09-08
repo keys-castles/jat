@@ -50,9 +50,11 @@ void viewApplications(){
         strip = strtok(buffer, ",");
 
         while (strip != NULL){
-            printf("%s     ", strip);
+            printf("%s         ", strip);
             strip = strtok(NULL, ",");
         }
+
+        printf("\n");
 
     }
 
