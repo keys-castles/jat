@@ -14,7 +14,7 @@
 
 // } interface;
 
-void printMenu(int opcode){
+void printMenu(){
     printf("    __     _      _____         _ _         _   _         \n");
     printf(" __|  |___| |_   |  _  |___ ___| |_|___ ___| |_|_|___ ___ \n");
     printf("|  |  | . | . |  |     | . | . | | |  _| .'|  _| | . |   |\n");
@@ -40,22 +40,22 @@ void printMenu(int opcode){
 };
 
 
-int handleInput(char* input){
-
+void handleInput(char* input, int* check){
     if (strcmp(input, "VIEW") == 0) {
         system("clear");
         viewApplications();
-        return 1;
     }
     else if (strcmp(input, "ADD") == 0) {
-        return 2;
+        system("clear");
+        // addApplication();
     }
     else if (strcmp(input, "EXIT") == 0) {
-        return 0;
+        system("clear");
+        printMenu();
+        *check = *(check) - 1;
     }
     else{
         printf("INVALID INPUT");
-        return -1;
     }
 
 };
